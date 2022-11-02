@@ -1,0 +1,57 @@
+
+.page-grid {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    min-height: 3000px;
+
+}
+
+aside {
+    position: relative;
+    width: 100%;
+    background: $baige;
+    border-right: 1px solid $lightBorder;
+
+    .aside-content {
+        width: 120px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .top {
+        padding-top: 2rem;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .mid {
+        .page-title {
+            text-transform: uppercase;
+            font-weight: $fw300;
+            font-size: 18px;
+            -webkit-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            transform: rotate(270deg);
+
+        }
+    }
+
+    .bot {
+        padding-bottom: 2rem;
+
+        span {
+            font-size: 100px;
+        }
+    }
+}

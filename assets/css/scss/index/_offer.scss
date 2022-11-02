@@ -1,0 +1,90 @@
+.offer-section {
+    background: $gray500;
+    color: $green500;
+
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 0;
+
+        @media ($mmd) {
+            display: flex;
+        }
+    }
+
+    .offer-wrapper {
+        padding: 96px 0;
+        grid-column: 2/12;
+        width: 100%;
+
+        @media ($mmd) {
+            padding: 64px 0;
+        }
+    }
+
+    .heading-content {
+        max-width: 420px;
+        margin-bottom: 174px;
+
+        @media ($mmd) {
+            margin-bottom: 92px;
+        }
+    }
+
+    .heading {
+        font-size: 64px;
+        font-family: $secondaryFont;
+        font-weight: $fw400;
+        line-height: 70px;
+
+        @media ($mmd) {
+            font-size: 48px;
+            line-height: 53px;
+        }
+    }
+
+    .offer-list {
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+
+            &:first-of-type {
+                a {
+                    border-top: 1px solid $green500;
+                }
+            }
+
+            a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                padding: 20px 0;
+                border-bottom: 1px solid $green500;
+
+                &:hover {
+                    .icon-right-arrow {
+                        transform: translateX(20px);
+                    }
+                }
+
+                .offer-name {
+                    font-size: 20px;
+                    font-weight: $fw300;
+                    color: $green500;
+                }
+
+                .icon-right-arrow {
+                    color: $copper500;
+                    font-size: 22px;
+                    position: relative;
+                    left: -20px;
+                    transition: $defaultTransition;
+                }
+            }
+        }
+    }
+}

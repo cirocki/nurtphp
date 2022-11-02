@@ -1,0 +1,31 @@
+.btn {
+	display: inline-flex;
+	padding: 21px 32px;
+	// color: $gray500;
+	font-family: $primaryFont;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	// background: $copper500;
+	border: 0;
+	border-radius: 120px;
+	text-decoration: none;
+	transition: $defaultTransition;
+	position: relative;
+	&:hover {
+		// background: $white;
+		// color: $black;
+		span {
+			transform: translateX(0);
+		}
+	}
+	span {
+		transition: $defaultTransition;
+		transform: translateX(-6px);
+		margin-left: 26px;
+		position: relative;
+	}
+
+}
+

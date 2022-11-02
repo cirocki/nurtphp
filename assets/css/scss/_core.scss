@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Siena';
+	src:  url('../fonts/siena/Webfont/Siena-Regular.woff2') format('woff2'),
+		  url('../fonts/siena/Webfont/Siena-Regular.woff') format('woff');
+  }
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: $primaryFont;
+    font-weight: 300;
+	background: $baige;
+	color: $black;
+    line-height: 1.5;
+}
+.page {
+    flex: 1;
+    // margin-top: $headerDesktopHeight;
+    // @media ($mmd) {
+    //     margin-top: $headerMobileHeight;
+    // }
+}
+.container {
+    max-width: $containerWidth;
+    margin: 0 auto;
+
+}
+.container-in {
+
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}

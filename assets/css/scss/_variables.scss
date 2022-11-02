@@ -1,0 +1,55 @@
+/** Colors */
+$baige: #DDDED0;
+$lightgreen: #B2B3AA;
+$darkgreen: #525750;
+$black: #2B2E34;
+$black2: #212327;
+$white: #ffffff;
+
+
+
+/** Fonts */
+$primaryFont: "mundial", sans-serif;
+$secondaryFont: "Siena", sans-serif;
+$fw300: 300;
+$fw400: 400;
+
+// BORDERS 
+$darkBorder: #707070;
+$lightBorder: #B2B3AA;
+
+
+/** Media Queries */
+// MIN 
+$xxs: "min-width: 340px";
+$xs: "min-width: 400px";
+$sm: "min-width: 480px";
+$md: "min-width: 769px";
+$lg: "min-width: 993px";
+$xl: "min-width: 1201px";
+$xxl: "min-width: 1401px";
+$xxxl: "min-width: 1801px";
+// MAX 
+$mxxs: "max-width: 339px";
+$mxs: "max-width: 399px";
+$msm: "max-width: 479px";
+$mmd: "max-width: 768px";
+$mlg: "max-width: 992px";
+$mxl: "max-width: 1200px";
+$mxxl: "max-width: 1400px";
+$mxxxl: "max-width: 1800px";
+
+// CONTAINER WIDTH 
+$containerWidth: 1600px;
+
+// TRANSITION 
+$defaultTransition: all 0.2s;
+
+
+// HEADER 
+$headerDesktopHeight: 128px;
+$headerMobileHeight: 104px;
+
+
+// FOOTER 
+$footerColor: #7d7d7d;
