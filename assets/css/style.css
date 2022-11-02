@@ -36,8 +36,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -55,7 +55,8 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -79,23 +80,23 @@ select {
     scroll-behavior: auto;
   }
   *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-
 /*--------------------------------------------------------------
 # Core
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Siena';
+  font-family: "Siena";
   src: url("../fonts/siena/Webfont/Siena-Regular.woff2") format("woff2"), url("../fonts/siena/Webfont/Siena-Regular.woff") format("woff");
 }
-
 html, body {
   height: 100%;
   display: flex;
@@ -125,7 +126,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 ul li {
   list-style: none;
 }
@@ -138,6 +138,12 @@ ul li {
   grid-template-columns: 160px 1fr;
   min-height: 3000px;
 }
+@media (max-width: 860px) {
+  .page-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 aside {
   position: relative;
@@ -145,10 +151,15 @@ aside {
   background: #DDDED0;
   border-right: 1px solid #B2B3AA;
 }
-
+@media (max-width: 860px) {
+  aside {
+    display: none;
+  }
+}
 aside .aside-content {
   width: 120px;
   height: 100vh;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   bottom: 0;
@@ -157,26 +168,21 @@ aside .aside-content {
   justify-content: space-between;
   align-items: center;
 }
-
 aside .top {
   padding-top: 2rem;
 }
-
 aside .top p {
   font-size: 18px;
 }
-
 aside .mid .page-title {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
   transform: rotate(270deg);
 }
-
 aside .bot {
   padding-bottom: 2rem;
 }
-
 aside .bot span {
   font-size: 100px;
 }
@@ -202,23 +208,20 @@ aside .bot span {
   transition: all 0.2s;
   position: relative;
 }
-
 .btn:hover span {
   transform: translateX(0);
 }
-
 .btn span {
   transition: all 0.2s;
   transform: translateX(-6px);
   margin-left: 26px;
   position: relative;
-}
-
-/*--------------------------------------------------------------
+} /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 .main-header {
   background: #DDDED0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   right: 0px;
@@ -226,9 +229,19 @@ aside .bot span {
   z-index: 999;
   border-bottom: 1px solid #B2B3AA;
 }
+@media (max-width: 860px) {
+  .main-header {
+    position: fixed;
+  }
+}
 
 .hamburger-wrapper {
   display: none;
+}
+@media (max-width: 860px) {
+  .hamburger-wrapper {
+    display: flex;
+  }
 }
 
 .nav-primary {
@@ -239,14 +252,19 @@ aside .bot span {
 .menu {
   display: inline-flex;
 }
+@media (max-width: 860px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .menu-item {
   text-transform: uppercase;
   margin: 1rem 0.5rem;
 }
-
 .menu-item a {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   color: #2B2E34;
   text-decoration: none;
@@ -263,6 +281,40 @@ aside .bot span {
   padding-left: 1rem;
 }
 
+.menu-wrapper .top-part {
+  display: none;
+}
+@media (max-width: 860px) {
+  .menu-wrapper .top-part {
+    display: block;
+  }
+}
+@media (max-width: 860px) {
+  .menu-wrapper .bot-part {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu-wrapper.js-is-open {
+    height: 100vh;
+  }
+  .menu-wrapper.js-is-open .bot-part {
+    display: flex;
+    height: calc(100vh - 60px);
+    background: #ffffff;
+    border-bottom: 3px solid red;
+  }
+}
+
+.top-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: red;
+}
+
 .hamburger {
   font: inherit;
   display: flex;
@@ -271,7 +323,7 @@ aside .bot span {
   padding: 0;
   cursor: pointer;
   transition-timing-function: linear;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-property: opacity, filter;
   text-transform: none;
   color: inherit;
@@ -282,7 +334,7 @@ aside .bot span {
 .hamburger.js-is-active .hamburger-inner,
 .hamburger.js-is-active .hamburger-inner:after,
 .hamburger.js-is-active .hamburger-inner:before {
-  background-color: #ccc;
+  background-color: #2B2E34;
 }
 
 .hamburger-box {
@@ -305,10 +357,10 @@ aside .bot span {
   width: 32px;
   height: 2px;
   transition-timing-function: ease;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-property: transform;
   /* border-radius: 4px; */
-  background-color: #ccc;
+  background-color: #2B2E34;
 }
 
 .hamburger-inner:after,
@@ -328,11 +380,11 @@ aside .bot span {
 .hamburger--spin .hamburger-inner {
   z-index: 999;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-duration: .22s;
+  transition-duration: 0.22s;
 }
 
 .hamburger--spin .hamburger-inner:before {
-  transition: top .1s ease-in .25s, opacity .1s ease-in;
+  transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
 }
 
 .hamburger--spin .hamburger-inner:after {
@@ -340,14 +392,14 @@ aside .bot span {
 }
 
 .hamburger--spin.js-is-active .hamburger-inner {
-  transition-delay: .12s;
+  transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: rotate(225deg);
 }
 
 .hamburger--spin.js-is-active .hamburger-inner:before {
   top: 0;
-  transition: top .1s ease-out, opacity .1s ease-out .12s;
+  transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
   opacity: 0;
 }
 
@@ -371,8 +423,6 @@ aside .bot span {
 .hero-section {
   border-bottom: 1px solid #B2B3AA;
 }
-
 .hero-section .icon-logotyp {
   font-size: 100px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

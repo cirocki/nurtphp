@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: 160px 1fr;
     min-height: 3000px;
+    @media (max-width: $mobileWidth) {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -11,6 +15,9 @@ aside {
     width: 100%;
     background: $baige;
     border-right: 1px solid $lightBorder;
+        @media (max-width: $mobileWidth) {
+        display: none;
+    }
 
     .aside-content {
         width: 120px;

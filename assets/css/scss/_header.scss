@@ -7,10 +7,18 @@
     left: 0px;
     z-index: 999;
     border-bottom: 1px solid $lightBorder;
+
+    @media (max-width: $mobileWidth) {
+        position: fixed;
+    }
 }
 
 .hamburger-wrapper {
     display: none;
+
+    @media (max-width: $mobileWidth) {
+        display: flex;
+    }
 }
 
 .nav-primary {
@@ -20,6 +28,10 @@
 
 .menu {
     display: inline-flex;
+    @media (max-width: $mobileWidth) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .menu-item {
@@ -27,7 +39,7 @@
     margin: 1rem 0.5rem;
 
     a {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: $fw300;
         color: $black;
         text-decoration: none;
@@ -35,13 +47,52 @@
         padding: 0.5rem;
     }
 }
+
 #menu-primary-menu {
-margin-right: 1rem;
+    margin-right: 1rem;
 }
+
 #menu-social-menu {
     border-left: 1px solid $lightBorder;
     padding-left: 1rem;
-  
+}
+
+.menu-wrapper {
+    .top-part {
+        display: none;
+        @media (max-width: $mobileWidth) {
+            display: block;
+        }
+    }
+    .bot-part {
+        @media (max-width: $mobileWidth) {
+            display: none;
+
+        }
+    }
+}
+
+.menu-wrapper.js-is-open {
+
+    @media (max-width: $mobileWidth) {
+        height: 100vh;
+
+
+        .bot-part {
+            display: flex;
+            height: calc(100vh - 60px);
+            background: $white;
+            border-bottom: 3px solid red;
+        }
+    }
+}
+
+.top-content-wrapper {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+background: red;
 }
 
 // HAMBURGER 
@@ -64,7 +115,7 @@ margin-right: 1rem;
 .hamburger.js-is-active .hamburger-inner,
 .hamburger.js-is-active .hamburger-inner:after,
 .hamburger.js-is-active .hamburger-inner:before {
-    background-color: #ccc;
+    background-color: $black;
 }
 
 .hamburger-box {
@@ -90,7 +141,7 @@ margin-right: 1rem;
     transition-duration: .15s;
     transition-property: transform;
     /* border-radius: 4px; */
-    background-color: #ccc;
+    background-color: $black;
 }
 
 .hamburger-inner:after,
