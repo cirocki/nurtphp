@@ -7,7 +7,7 @@ include './components/header.php';
 <main>
   <!-- HERO  -->
   <section class="hero-section">
-    <h1>Projekty</h1>
+    <h1>Projekty home 2</h1>
   </section>
 
 </main>
