@@ -24,9 +24,13 @@ include './components/head.php';
       <main>
         <?php include './components/header.php'; ?>
         <!-- HERO  -->
-        <section class="hero-section">
+        <section class="hero-section standard-section">
           <div class="container-in">
-            <span class="icon-logotyp"></span>
+            <div class="logotype-wrapper">
+
+              <span class="icon-logotyp"></span>
+            </div>
+            
           </div>
         </section>
 

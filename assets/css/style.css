@@ -181,6 +181,10 @@ aside .bot span {
   font-size: 100px;
 }
 
+.standard-section {
+  padding: 2rem 0;
+}
+
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
@@ -359,5 +363,16 @@ aside .bot span {
 .main-footer {
   background: black;
   height: 300px;
+}
+
+/*--------------------------------------------------------------
+# Index
+--------------------------------------------------------------*/
+.hero-section {
+  border-bottom: 1px solid #B2B3AA;
+}
+
+.hero-section .icon-logotyp {
+  font-size: 100px;
 }
 /*# sourceMappingURL=style.css.map */
