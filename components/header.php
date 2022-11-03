@@ -44,10 +44,15 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                                     mnie</a></li>
                             <li class="menu-item <?= ($activePage == 'kontakt') ? 'active' : ''; ?>"><a href="/pytania-odpowiedzi">Q&A</a></li>
                             <li class="menu-item <?= ($activePage == 'kontakt') ? 'active' : ''; ?>"><a href="/kontakt">Kontakt</a></li>
-                        </ul>
-                        <ul id="menu-social-menu" class="menu">
+                        </ul><ul id="menu-social-menu" class="menu">
                             <li class="menu-item "><a href="#instagram">IG</a></li>
                             <li class="menu-item "><a href="#facebook">FB</a></li>
+                        </ul>
+                        <ul id="mobile-social-menu" class="menu">
+                            <li class="menu-item "><a href="tel:+48600366061">+48 600366061</a></li>
+                           
+                            <li class="menu-item "><a href="#facebook">FB facebook.com/nurt.studio</a></li>
+                            <li class="menu-item"><a href="#instagram">IG nurt.studio</a></li>
                         </ul>
                     </div>
                 </nav>
