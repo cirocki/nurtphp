@@ -16,10 +16,6 @@ html, body {
 }
 .page {
     flex: 1;
-    // margin-top: $headerDesktopHeight;
-    // @media ($mmd) {
-    //     margin-top: $headerMobileHeight;
-    // }
 }
 .container {
     max-width: $containerWidth;

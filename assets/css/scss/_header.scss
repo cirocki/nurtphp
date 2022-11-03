@@ -24,6 +24,7 @@
 .nav-primary {
     display: flex;
     justify-content: flex-end;
+
     @media (max-width: $mobileWidth) {
         height: 100%;
     }
@@ -31,6 +32,7 @@
 
 .menu {
     display: inline-flex;
+
     @media (max-width: $mobileWidth) {
         display: flex;
         flex-direction: column;
@@ -40,17 +42,22 @@
 .menu-item {
     text-transform: uppercase;
     margin: 1rem 0.5rem;
+
     &:first-of-type {
         margin-left: 0;
     }
+
     &:last-of-type {
         margin-right: 0;
     }
+
     @media (max-width: $mobileWidth) {
         margin: 0.5rem 0;
+
         &:first-of-type {
             margin-top: 0;
         }
+
         &:last-of-type {
             margin-bottom: 0;
         }
@@ -63,21 +70,24 @@
         text-decoration: none;
         letter-spacing: 1px;
         padding: 0.5rem;
+
         @media (max-width: $mobileWidth) {
             padding-right: 0;
         }
     }
 }
+
 .menu-primary-menu-container {
     @media (max-width: $mobileWidth) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
 #menu-primary-menu {
     margin-right: 1rem;
+
     @media (max-width: $mobileWidth) {
         margin-right: 0;
         margin-top: 2rem;
@@ -92,6 +102,10 @@
 #menu-social-menu {
     border-left: 1px solid $lightBorder;
     padding-left: 1rem;
+    .menu-item a {
+        padding-right: 0;
+      }
+
     @media (max-width: $mobileWidth) {
         display: none;
     }
@@ -100,17 +114,21 @@
 #mobile-social-menu {
     display: none;
     text-align: right;
+
     @media (max-width: $mobileWidth) {
         display: flex;
         margin-bottom: 4rem;
     }
+
     @media (min-height: 600px) {
         margin-bottom: 6rem;
     }
+
     .menu-item {
         @media (max-width: $mobileWidth) {
-            margin:0;
+            margin: 0;
         }
+
         a {
             text-transform: none;
         }
@@ -120,9 +138,11 @@
 .menu-wrapper {
     .top-part {
         display: none;
+
         @media (max-width: $mobileWidth) {
             display: block;
         }
+
         a {
             text-decoration: none;
             color: $black;
@@ -132,10 +152,12 @@
             font-size: 40px;
         }
     }
+
     .bot-part {
         @media (max-width: $mobileWidth) {
             display: none;
         }
+
         .container-in {
             @media (max-width: $mobileWidth) {
                 width: 100%;
@@ -145,29 +167,26 @@
 }
 
 .menu-wrapper.js-is-open {
-
     @media (max-width: $mobileWidth) {
         height: 100vh;
+
         .top-part {
             background: $white;
         }
-
 
         .bot-part {
             display: flex;
             height: calc(100vh - 60px);
             background: $white;
-           
         }
     }
 }
 
 .top-content-wrapper {
     display: flex;
-justify-content: space-between;
-align-items: center;
-height: 60px;
-
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
 
 // HAMBURGER 

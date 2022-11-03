@@ -27,12 +27,26 @@ include './components/head.php';
         <section class="hero-section standard-section">
           <div class="container-in">
             <div class="logotype-wrapper">
-
               <span class="icon-logotyp"></span>
+            </div>
+            <div class="duo-wrapper">
+              <div class="standard-grid">
+                <div class="text-wrapper">
+                  <h1 class="hero-heading">Tworzę wnętrza skrojone na miarę mieszkańców – nie zawsze ściśle podążające za modą, zawsze spójne z klientem.</h1>
+                </div>
+                <div class="img-wrapper">
+                  <img src="./assets/img/hero/nurtstudio-hero.jpg" alt="Projektowanie wnętrz - Nurt Studio">
+                </div>
+              </div>
             </div>
             
           </div>
         </section>
+        <!-- HERO END-->
+    
+        <!-- FAQ  -->
+        <?php include './components/faq.php'; ?>
+        <!-- FAQ END -->
 
       </main>
 

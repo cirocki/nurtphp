@@ -1,13 +1,12 @@
-
 .page-grid {
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 1fr 7fr;
     min-height: 3000px;
+
     @media (max-width: $mobileWidth) {
         display: flex;
         flex-direction: column;
     }
-
 }
 
 aside {
@@ -15,7 +14,10 @@ aside {
     width: 100%;
     background: $baige;
     border-right: 1px solid $lightBorder;
-        @media (max-width: $mobileWidth) {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $mobileWidth) {
         display: none;
     }
 
@@ -29,14 +31,13 @@ aside {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-
     }
 
     .top {
         padding-top: 2rem;
 
         p {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
 
@@ -50,7 +51,6 @@ aside {
             -ms-transform: rotate(270deg);
             -o-transform: rotate(270deg);
             transform: rotate(270deg);
-
         }
     }
 
@@ -65,4 +65,10 @@ aside {
 
 .standard-section {
     padding: 2rem 0;
+}
+
+.standard-grid {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 2rem;
 }
