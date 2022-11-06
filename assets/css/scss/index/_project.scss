@@ -1,0 +1,44 @@
+.project-section {
+    border-bottom: 1px solid $lightBorder;
+    .project-grid {
+        grid-template-columns: 3fr 2fr 2fr;
+        grid-gap: 2rem;
+        grid-template-areas: 'image title year' 'image desc more';
+    }
+    .project-thumbnail-wrapper {
+        grid-area: image;
+    }
+    .project-title-wrapper {
+        grid-area: title;
+    }
+    .project-year-wrapper {
+        grid-area: year;
+    }
+    .project-desc-wrapper {
+        grid-area: desc;
+    }
+    .project-more-wrapper {
+        grid-area: more;
+    }
+    .project-year-wrapper, .project-more-wrapper {
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .project-desc-wrapper, .project-more-wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .project-title {
+        font-size: 64px;
+        font-family: $secondaryFont;
+        font-weight: $fw400;
+        line-height: 1.4;
+    }
+    .project-desc {
+        font-size: 20px;
+        font-weight: $fw300;
+   
+    }
+
+}

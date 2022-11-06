@@ -21,6 +21,7 @@ include './components/head.php';
           </div>
         </div>
       </aside>
+
       <main>
         <?php include './components/header.php'; ?>
         <!-- HERO  -->
@@ -34,16 +35,45 @@ include './components/head.php';
                 <div class="text-wrapper">
                   <h1 class="hero-heading">Tworzę wnętrza skrojone na miarę mieszkańców – nie zawsze ściśle podążające za modą, zawsze spójne z klientem.</h1>
                 </div>
-                <div class="img-wrapper">
+                <div class="img-wrapper filter-image">
                   <img src="./assets/img/hero/nurtstudio-hero.jpg" alt="Projektowanie wnętrz - Nurt Studio">
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
         <!-- HERO END-->
-    
+
+        <!-- PROJECT  -->
+        <div class="project-section standard-section">
+          <div class="container-in">
+            <div class="project-item">
+
+              <div class="standard-grid project-grid">
+                <div class="project-thumbnail-wrapper filter-image">
+                  <img src="./assets/img/project/index-projekt1.jpg" alt="Projekt - Gdańsk IV">
+                </div>
+                <div class="project-title-wrapper">
+                  <h2 class="project-title">Gdańsk IV</h2>
+                </div>
+                <div class="project-year-wrapper">
+                  <date class="project-year">2022</date>
+                </div>
+                <div class="project-desc-wrapper">
+                  <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis laoreet placerat ac vel quam. Cras tristique malesuada justo.</date>
+                </div>
+                <div class="project-more-wrapper more">
+                  <a class="more project-more" href="#">Zobacz projekt <span class="icon-arrowdark"></span></a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- PROJECT END -->
+
         <!-- FAQ  -->
         <?php include './components/faq.php'; ?>
         <!-- FAQ END -->

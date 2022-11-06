@@ -13,19 +13,42 @@
 	text-decoration: none;
 	transition: $defaultTransition;
 	position: relative;
+
 	&:hover {
+
 		// background: $white;
 		// color: $black;
 		span {
 			transform: translateX(0);
 		}
 	}
+
 	span {
 		transition: $defaultTransition;
 		transform: translateX(-6px);
 		margin-left: 26px;
 		position: relative;
 	}
-
 }
 
+.more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	color: $black;
+
+	span {
+		margin-left: 1rem;
+		font-size: 8px;
+	}
+}
