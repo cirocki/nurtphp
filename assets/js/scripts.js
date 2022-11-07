@@ -85,12 +85,15 @@ window.addEventListener("DOMContentLoaded", (e) => {
     };
   
     //   CLOSE MODAL FUNCTION ON CLICK OUTSIDE MODAL CONTENT
-    modalWindow.addEventListener("click", function (event) {
-      const isInside = event.target.closest(".modal__content");
-      if (!isInside) {
-        closeModalFunction();
-      }
-    });
+    if(modalWindow) {
+
+      modalWindow.addEventListener("click", function (event) {
+        const isInside = event.target.closest(".modal__content");
+        if (!isInside) {
+          closeModalFunction();
+        }
+      });
+    }
     // MODALS END 
 
     // SPLIDE SLIDER 
