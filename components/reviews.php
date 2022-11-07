@@ -44,7 +44,7 @@
                                     <h2 class="project-title">Opinie</h2>
                                 </div>
                                 <div class="project-name-wrapper">
-                                    <date class="project-name">Konrad</date>
+                                    <date class="project-name">Marcin</date>
                                 </div>
                                 <div class="project-desc-wrapper">
                                     <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis
