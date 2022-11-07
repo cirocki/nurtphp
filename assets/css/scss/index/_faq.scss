@@ -1,4 +1,5 @@
 .faq-section {
+    padding-bottom: 0;
 
     .heading-wrapper {
         border-bottom: 1px solid $lightBorder;
@@ -15,6 +16,9 @@
     .items-wrapper {
         .item {
             border-bottom: 1px solid $lightBorder;
+            &:last-of-type {
+                border-bottom: 0;
+            }
         }
     }
 

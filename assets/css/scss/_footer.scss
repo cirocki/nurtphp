@@ -1,5 +1,38 @@
 .main-footer {
-    background: $darkgreen;
-    height: 300px;
-    padding: 2rem 0;
+    color: $baige;
+    .standard-grid {
+        padding: 6rem 0 8rem 0;
+
+    }
+
+    .title-wrapper {
+        .title {
+            font-size: 56px;
+            font-family: $secondaryFont;
+            font-weight: $fw400;
+        }
+    }
+
+    .cta-wrapper {
+        display: flex;
+    }
+
+    .more {
+        color: $baige;
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
+
+    .info-part {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: $baige;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }

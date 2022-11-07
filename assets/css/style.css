@@ -136,7 +136,6 @@ ul li {
 .page-grid {
   display: grid;
   grid-template-columns: 1fr 7fr;
-  min-height: 3000px;
 }
 
 @media (max-width: 860px) {
@@ -238,6 +237,14 @@ img {
   transition: all 0.5s;
 }
 
+.page-bot {
+  background: #525750;
+}
+
+.page-bot .bot__aside {
+  border-right: 1px solid #B2B3AA;
+}
+
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
@@ -268,9 +275,6 @@ img {
 }
 
 .more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
   background: none;
   border: none;
@@ -597,9 +601,42 @@ img {
 # Footer
 --------------------------------------------------------------*/
 .main-footer {
-  background: #525750;
-  height: 300px;
+  color: #DDDED0;
+}
+
+.main-footer .standard-grid {
+  padding: 6rem 0 8rem 0;
+}
+
+.main-footer .title-wrapper .title {
+  font-size: 56px;
+  font-family: "Siena", sans-serif;
+  font-weight: 400;
+}
+
+.main-footer .cta-wrapper {
+  display: flex;
+}
+
+.main-footer .more {
+  color: #DDDED0;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.main-footer .info-part {
   padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer .info-part a {
+  color: #DDDED0;
+  text-decoration: none;
+}
+
+.main-footer .info-part a:hover {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -681,6 +718,10 @@ img {
   font-weight: 300;
 }
 
+.faq-section {
+  padding-bottom: 0;
+}
+
 .faq-section .heading-wrapper {
   border-bottom: 1px solid #B2B3AA;
   margin-top: 2rem;
@@ -695,6 +736,10 @@ img {
 
 .faq-section .items-wrapper .item {
   border-bottom: 1px solid #B2B3AA;
+}
+
+.faq-section .items-wrapper .item:last-of-type {
+  border-bottom: 0;
 }
 
 .faq-section .item-question .item-question__grid {
@@ -816,5 +861,10 @@ img {
 
 .modal__content .more:hover {
   text-decoration: underline;
+}
+
+.reviews-section {
+  background: #525750;
+  border-bottom: 1px solid #B2B3AA;
 }
 /*# sourceMappingURL=style.css.map */

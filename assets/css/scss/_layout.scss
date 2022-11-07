@@ -1,8 +1,6 @@
 .page-grid {
     display: grid;
     grid-template-columns: 1fr 7fr;
-    min-height: 3000px;
-
     @media (max-width: $mobileWidth) {
         display: flex;
         flex-direction: column;
@@ -104,3 +102,10 @@ img {
     transition: all 0.5s ;
 }
 
+.page-bot {
+    background: $darkgreen;
+    .bot__aside {
+
+        border-right: 1px solid #B2B3AA;
+    }
+}

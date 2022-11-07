@@ -78,10 +78,26 @@ include './components/head.php';
         <?php include './components/faq.php'; ?>
         <!-- FAQ END -->
 
+
+
       </main>
 
+    </div>
+    <div class="page-bot">
+      <div class="page-grid">
+        <div class="bot__aside">
+
+        </div>
+        <div class="bot__main">
+        <!-- REVIEWS  -->
+        <?php include './components/reviews.php'; ?>
+        <!-- REVIEWS END -->
+        <!-- FOOTER  -->
+        <?php include './components/footer.php'; ?>
+        <!-- FOOTER END -->
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<?php include './components/footer.php'; ?>
