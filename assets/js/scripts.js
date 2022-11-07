@@ -63,8 +63,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
           const parentItem = e.target.closest('.item-content')
           const question = parentItem.querySelector('.question p').innerHTML
           const answer = parentItem.querySelector('.answer p').innerHTML
-          console.log(question);
-          console.log(answer);
+          modalWindow.querySelector('.modal-question').textContent = question
+          modalWindow.querySelector('.modal-answer').textContent = answer
           openModalFunction();
         });
       })

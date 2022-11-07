@@ -29,10 +29,7 @@
                         <div class="item-answer__grid">
                             <div></div>
                             <div class="answer">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nobis laudantium
-                                    repudiandae,
-                                    fugit animi odio ipsum a consectetur natus id voluptatibus excepturi unde molestias
-                                    voluptate. Provident, autem similique. Delectus, ad.</p>
+                                <p>Zanim zacznę projektowanie Twojego wnętrza zapraszam Cię na spotkanie do mojego biura w Gdańsku lub, w przypadku projektów zdalnych, umawiamy się on-line. Podczas takiego spotkania podpisujemy umowę, która zawiera wszystkie szczegóły naszej współpracy oraz rozmawiamy o założeniach projektowych dotyczących funkcjonalności, budżetu czy materiałów. Chcę też poznać Twoje oczekiwania, gust oraz zwyczaje a w tym celu przeprowadzam z Tobą ankietę. Wszystko po to, by wnętrze które zaprojektuję było skrojone dokładnie na Twoją miarę.</p>
                             </div>
 
                         </div>
@@ -151,17 +148,16 @@
     <div class="modal">
         <div class="modal__content">
             <div class="card">
-                <div class="instruction">
-                    <p>You can close that modal:</p>
+                <div class="content">
+                    <h3 class="modal-question"></h3>
+                    <p class="modal-answer"></p>
                 </div>
-                <div class="btn close-modal">
-                    Close modal
+                <div class="more close-modal">
+                    Zamknij
                 </div>
             </div>
             <div class="close-icon-wrapper">
-                <button class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" fill="black" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.094l-4.157-4.104 4.1-4.141-1.849-1.849-4.105 4.159-4.156-4.102-1.833 1.834 4.161 4.12-4.104 4.157 1.834 1.832 4.118-4.159 4.143 4.102 1.848-1.849z" />
-                    </svg></button>
+                <button class="close-modal"><span class="icon-cross"></span></button>
             </div>
         </div>
     </div>
