@@ -1,5 +1,81 @@
 .reviews-section {
     background: $darkgreen;
     border-bottom: 1px solid $lightBorder;
+    color: $baige;
 
+    .project-grid {
+        grid-template-columns: 3fr 2fr 2fr;
+        grid-gap: 2rem;
+        grid-template-areas: 'image title name''image desc more';
+    }
+
+    .project-thumbnail-wrapper {
+        grid-area: image;
+    }
+
+    .project-title-wrapper {
+        grid-area: title;
+    }
+
+    .project-name-wrapper {
+        grid-area: name;
+    }
+
+    .project-desc-wrapper {
+        grid-area: desc;
+    }
+
+    .project-more-wrapper {
+        grid-area: more;
+    }
+
+    .project-name-wrapper,
+    .project-more-wrapper {
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    .project-desc-wrapper,
+    .project-more-wrapper {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .project-title {
+        font-size: 64px;
+        font-family: $secondaryFont;
+        font-weight: $fw400;
+        line-height: 1.4;
+    }
+
+    .project-desc {
+        font-size: 20px;
+        font-weight: $fw300;
+
+    }
+
+    .project-name {
+        font-size: 20px;
+    }
+
+    .more {
+        color: $baige;
+    }
+
+    .splide__arrow--next {
+
+        right: 0;
+    }
+
+    .splide__arrow {
+        background: none;
+        width: auto;
+        top: auto;
+        bottom: 0;
+        transform: none;
+        opacity: 1;
+    }
+    .splide__arrow:hover:not(:disabled) {
+        opacity: 1;
+      }
 }

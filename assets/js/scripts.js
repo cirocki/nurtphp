@@ -93,5 +93,13 @@ window.addEventListener("DOMContentLoaded", (e) => {
     });
     // MODALS END 
 
+    // SPLIDE SLIDER 
+    var splide = new Splide( '.splide', {
+      rewind: true,
+      pagination: false
+      // type: "slide"
+    } );
+    splide.mount();
+
 });
 

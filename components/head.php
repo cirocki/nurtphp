@@ -50,11 +50,13 @@ if (empty($pageDescription)) {
 
     <!-- CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/splide.min.css" />
     <link rel="stylesheet" href="./assets/fonts/icomoon/icomoon.css" />
     <!-- FONTS  -->
     <link rel="stylesheet" href="https://use.typekit.net/lpv8xig.css">
     <!-- SCRIPTS  -->
     <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/splide.min.js"></script>
     <script src="./assets/js/gsap.min.js"></script>
     <script src="./assets/js/ScrollTrigger.min.js"></script>
     <script src="./assets/js/ScrollToPlugin.min.js"></script>

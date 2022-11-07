@@ -713,6 +713,10 @@ img {
   line-height: 1.4;
 }
 
+.project-section .project-year {
+  font-size: 20px;
+}
+
 .project-section .project-desc {
   font-size: 20px;
   font-weight: 300;
@@ -866,5 +870,81 @@ img {
 .reviews-section {
   background: #525750;
   border-bottom: 1px solid #B2B3AA;
+  color: #DDDED0;
+}
+
+.reviews-section .project-grid {
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-gap: 2rem;
+  grid-template-areas: "image title name" "image desc more";
+}
+
+.reviews-section .project-thumbnail-wrapper {
+  grid-area: image;
+}
+
+.reviews-section .project-title-wrapper {
+  grid-area: title;
+}
+
+.reviews-section .project-name-wrapper {
+  grid-area: name;
+}
+
+.reviews-section .project-desc-wrapper {
+  grid-area: desc;
+}
+
+.reviews-section .project-more-wrapper {
+  grid-area: more;
+}
+
+.reviews-section .project-name-wrapper,
+.reviews-section .project-more-wrapper {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.reviews-section .project-desc-wrapper,
+.reviews-section .project-more-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.reviews-section .project-title {
+  font-size: 64px;
+  font-family: "Siena", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.reviews-section .project-desc {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.reviews-section .project-name {
+  font-size: 20px;
+}
+
+.reviews-section .more {
+  color: #DDDED0;
+}
+
+.reviews-section .splide__arrow--next {
+  right: 0;
+}
+
+.reviews-section .splide__arrow {
+  background: none;
+  width: auto;
+  top: auto;
+  bottom: 0;
+  transform: none;
+  opacity: 1;
+}
+
+.reviews-section .splide__arrow:hover:not(:disabled) {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
