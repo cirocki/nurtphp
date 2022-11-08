@@ -1,0 +1,105 @@
+.offer-section {
+
+
+    .offer-table {
+        position: relative;
+        min-height: 400px;
+        background: lightgreen;
+    }
+
+    .offer-grid {
+        display: grid;
+        grid-template-columns: 4fr 9fr;
+
+    }
+
+    .table-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .right-side {
+        // overflow: auto;
+
+    }
+    .right-side-inner {
+
+        position: relative;
+    }
+
+    .offer-top {
+        background: $baige;
+        position: sticky;
+        top: $headerDesktopHeight;
+
+        @media (max-width: $mobileWidth) {
+            top: $headerMobileHeight;
+
+        }
+
+    }
+
+
+    .cell {
+        min-height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width:200px
+    }
+
+    // PLANY 
+    .top-cells {
+        .cell {
+            padding: 2rem 1rem;
+            height: 236px;
+        }
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .plan-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+
+        }
+
+        .plan-title {
+
+            font-size: 32px;
+            font-family: $secondaryFont;
+            font-weight: $fw400;
+            text-transform: uppercase;
+        }
+
+        .plan-desc,
+        .plan-size {
+            font-size: 18px;
+            font-weight: $fw300;
+            letter-spacing: 1px;
+        }
+        .plan-size {
+            margin-top: 1rem;
+        }
+
+    }
+
+    // ETAPY /
+.etapy-cell {
+    background: $baige;
+
+    position: sticky;
+    top: $headerDesktopHeight;
+
+    @media (max-width: $mobileWidth) {
+        top: $headerMobileHeight;
+
+    }
+}
+
+}

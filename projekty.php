@@ -11,13 +11,17 @@ include './components/head.php';
       <aside>
         <div class="aside-content">
           <div class="top">
-            <p>STUDIO</p>
+          <a href="/">
+                STUDIO
+              </a> 
           </div>
           <div class="mid">
             <h1 class="page-title">Projekty</h1>
           </div>
           <div class="bot">
-            <span class="icon-logodark"></span>
+          <a href="/">
+              <span class="icon-logodark"></span>
+            </a>
           </div>
         </div>
       </aside>
@@ -45,7 +49,7 @@ include './components/head.php';
                   <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis laoreet placerat ac vel quam. Cras tristique malesuada justo.</date>
                 </div>
                 <div class="project-more-wrapper more">
-                  <a class="more project-more" href="#">Zobacz projekt <span class="icon-arrowdark"></span></a>
+                  <a class="more project-more" href="/gdansk-4.php">Zobacz projekt <span class="icon-arrowdark"></span></a>
                 </div>
 
 
@@ -74,7 +78,7 @@ include './components/head.php';
                   <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis laoreet placerat ac vel quam. Cras tristique malesuada justo.</date>
                 </div>
                 <div class="project-more-wrapper more">
-                  <a class="more project-more" href="#">Zobacz projekt <span class="icon-arrowdark"></span></a>
+                  <a class="more project-more" href="/gdansk-4.php">Zobacz projekt <span class="icon-arrowdark"></span></a>
                 </div>
 
 
@@ -103,7 +107,7 @@ include './components/head.php';
                   <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis laoreet placerat ac vel quam. Cras tristique malesuada justo.</date>
                 </div>
                 <div class="project-more-wrapper more">
-                  <a class="more project-more" href="#">Zobacz projekt <span class="icon-arrowdark"></span></a>
+                  <a class="more project-more" href="/gdansk-4.php">Zobacz projekt <span class="icon-arrowdark"></span></a>
                 </div>
 
 

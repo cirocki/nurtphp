@@ -1,0 +1,77 @@
+.page-contact {
+    background: $darkgreen;
+
+    // NADPISANE
+    .main-header,
+    aside {
+        background: $darkgreen;
+    }
+
+    .menu-item a,
+    aside .top a,
+    aside .mid .page-title,
+    aside .bot span {
+        color: $baige;
+
+    }
+    // NOWE 
+    .contact-section {
+        border-bottom: 1px solid $lightBorder;
+        color: $baige;
+
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: '';
+            height: 1px;
+            width: 200vw;
+            background: $lightBorder;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            transform: rotate(29deg);
+            transform-origin: top left;
+        }
+    }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        margin-top: 8rem;
+    }
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .right-part {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .heading {
+        font-size: 56px;
+        line-height: 78px;
+        font-family: $secondaryFont;
+        font-weight: $fw400;
+    }
+
+    address {
+        font-style: normal;
+        font-size: 20px;
+        .group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            a {
+                align-self: flex-start;
+                color: $baige;
+                text-decoration: none;
+            }
+        }
+    }
+
+}

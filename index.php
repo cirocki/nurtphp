@@ -11,13 +11,17 @@ include './components/head.php';
       <aside>
         <div class="aside-content">
           <div class="top">
-            <p>STUDIO</p>
+            <a href="/">
+              STUDIO
+            </a>
           </div>
           <div class="mid">
             <h1 class="page-title">Projekty</h1>
           </div>
           <div class="bot">
-            <span class="icon-logodark"></span>
+            <a href="/">
+              <span class="icon-logodark"></span>
+            </a>
           </div>
         </div>
       </aside>
@@ -33,7 +37,8 @@ include './components/head.php';
             <div class="duo-wrapper">
               <div class="standard-grid">
                 <div class="text-wrapper">
-                  <h1 class="hero-heading">Tworzę wnętrza skrojone na miarę mieszkańców – nie zawsze ściśle podążające za modą, zawsze spójne z klientem.</h1>
+                  <h1 class="hero-heading">Tworzę wnętrza skrojone na miarę mieszkańców – nie zawsze ściśle podążające
+                    za modą, zawsze spójne z klientem.</h1>
                 </div>
                 <div class="img-wrapper filter-image">
                   <img src="./assets/img/hero/nurtstudio-hero.jpg" alt="Projektowanie wnętrz - Nurt Studio">
@@ -60,7 +65,8 @@ include './components/head.php';
                   <date class="project-year">2022</date>
                 </div>
                 <div class="project-desc-wrapper">
-                  <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis laoreet placerat ac vel quam. Cras tristique malesuada justo.</date>
+                  <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis laoreet placerat
+                    ac vel quam. Cras tristique malesuada justo.</date>
                 </div>
                 <div class="project-more-wrapper more">
                   <a class="more project-more" href="#">Zobacz projekt <span class="icon-arrowdark"></span></a>
@@ -89,15 +95,14 @@ include './components/head.php';
 
         </div>
         <div class="bot__main">
-        <!-- REVIEWS  -->
-        <?php include './components/reviews.php'; ?>
-        <!-- REVIEWS END -->
-        <!-- FOOTER  -->
-        <?php include './components/footer.php'; ?>
-        <!-- FOOTER END -->
+          <!-- REVIEWS  -->
+          <?php include './components/reviews.php'; ?>
+          <!-- REVIEWS END -->
+          <!-- FOOTER  -->
+          <?php include './components/footer.php'; ?>
+          <!-- FOOTER END -->
         </div>
       </div>
     </div>
   </div>
 </div>
-

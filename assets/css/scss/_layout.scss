@@ -1,6 +1,10 @@
+.page {
+background: $baige;
+}
 .page-grid {
     display: grid;
     grid-template-columns: 1fr 7fr;
+
     @media (max-width: $mobileWidth) {
         display: flex;
         flex-direction: column;
@@ -34,8 +38,11 @@ aside {
     .top {
         padding-top: 2rem;
 
-        p {
+        a {
             font-size: 20px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            color: $black;
         }
     }
 
@@ -50,10 +57,20 @@ aside {
             -o-transform: rotate(270deg);
             transform: rotate(270deg);
         }
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+
     }
 
     .bot {
         padding-bottom: 2rem;
+
+        a {
+            text-decoration: none;
+            color: $black;
+        }
 
         span {
             font-size: 100px;
@@ -73,6 +90,7 @@ aside {
 
 .filter-image {
     position: relative;
+
     &::after {
         background-color: rgba($color: #DDDED0, $alpha: 1);
         content: "";
@@ -84,28 +102,40 @@ aside {
         top: 0;
         width: 100%;
         z-index: 1;
-        transition: all 0.5s ;
+        transition: all 0.5s;
         opacity: 1;
     }
+
     &:hover {
         img {
             filter: grayscale(0);
         }
+
         &::after {
 
             opacity: 0;
         }
     }
 }
+
 img {
     filter: grayscale(1);
-    transition: all 0.5s ;
+    transition: all 0.5s;
 }
 
 .page-bot {
     background: $darkgreen;
+
     .bot__aside {
 
         border-right: 1px solid #B2B3AA;
+    }
+}
+
+main {
+
+    @media (max-width: $mobileWidth) {
+        margin-top: $headerMobileHeight;
+        
     }
 }

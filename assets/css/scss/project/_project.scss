@@ -1,0 +1,37 @@
+.page-project {
+    background: $white; 
+    .main-header, aside {
+        background: $white;
+      }
+ 
+     .projectpage-section {
+        .project-header {
+            margin-bottom: 6rem;
+        }
+        .project-year {
+            font-size: 16px;
+        }
+        .project-title {
+            font-size: 64px;
+            font-family: $secondaryFont;
+            font-weight: $fw400;
+            // margin-top: 0.5rem;
+        }
+     } 
+     .project-images {
+        img {
+            filter: none;
+        }
+        .double {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+        }
+        .line{
+            margin-bottom: 2rem;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+     }
+}
