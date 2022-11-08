@@ -30,29 +30,8 @@ include './components/head.php';
                 <?php include './components/header.php'; ?>
 
 
-                <div class="offer-section ">
-                    <div class="offer-table">
-                        <div class="offer-grid">
-
-                            <div class="left-side">
-                                <div class="top-cells">
-                                    <div class="cell etapy-cell">
-                                        <h3>etapy</h3>
-                                    </div>
-                                </div>
-                                <div class="normal-cells">
-                                    <div class="cell">
-                                        <h3>Spotkanie</h3>
-                                    </div>
-                                    <div class="cell">
-                                        <h3>Wybór inspiracji</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-side">
-                                <div class="right-side-inner">
-                                    <div class="top-cells table-grid offer-top">
-                                        <div class="cell plan">
+                <div class="top-cells  offer-top">
+                                        <!-- <div class="cell plan">
                                             <div class="plan-top">
                                                 <h2 class="plan-title">Koncepcyjny</h2>
                                                 <p class="plan-desc">
@@ -91,35 +70,17 @@ include './components/head.php';
                                                 wycena indywidualna
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="normal-cells table-grid">
-                                        <div class="cell">
-                                            <h3>11</h3>
-                                        </div>
-                                        <div class="cell">
-                                            <h3>22</h3>
-                                        </div>
-                                        <div class="cell">
-                                            <h3>33</h3>
-                                        </div>
-                                        <div class="cell">
-                                            <h3>44</h3>
-                                        </div>
-                                        <div class="cell">
-                                            <h3>55</h3>
-                                        </div>
-                                        <div class="cell">
-                                            <h3>66</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </div> -->
 
+                <!-- <div class="offer-section "> -->
+                    <!-- <div class="offer-table"> -->
+       <!-- TABELA  -->
+       <?php include './components/table.php'; ?>
+       <!-- TABELA END -->
 
-                    </div>
+                    <!-- </div> -->
 
-                </div>
+                <!-- </div> -->
 
             </main>
 

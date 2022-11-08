@@ -1175,15 +1175,99 @@ img {
   margin-top: 1rem;
 }
 
-.offer-section .etapy-cell {
-  background: #DDDED0;
-  position: sticky;
-  top: 62px;
+.wrap {
+  max-width: 960px;
+  margin: 2em auto;
 }
 
-@media (max-width: 860px) {
-  .offer-section .etapy-cell {
-    top: 60px;
+/* ==== Table of DIVs with CSS Grid ==== VITAL CSS ==== */
+.table-wrap {
+  /* the table wrapper */
+  margin: 2em auto;
+  background-color: #fff;
+  font-size: .9em;
+}
+
+.table-grid {
+  /* the table */
+  display: grid;
+  grid-template-rows: auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  overflow: auto;
+  border-bottom: 2px solid #281B67;
+}
+
+.table-grid.fixed-header {
+  max-height: 99vh;
+  /* ^ max-height is only req'd for sticky/fixed header row */
+}
+
+.table-row {
+  /* all table rows */
+  display: grid;
+  grid-template-columns: 240px repeat(3, 1fr);
+  background-color: #fff;
+}
+
+.table-row:nth-of-type(2n),
+.table-row:nth-of-type(2n) .fixed-col {
+  /* styles the alternating rows */
+  background-color: #E5E4EF;
+}
+
+.table-row > div {
+  /* the individual cells */
+  padding: .5em;
+  align-self: center;
+  text-align: center;
+}
+
+.table-header {
+  /* the header row */
+  font-weight: bold;
+  background-color: #6560A3;
+  color: #fff;
+  padding: 0;
+}
+
+.fixed-col {
+  /* the fixed cells */
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background-color: #fff;
+  padding: 1.2em !important;
+  border-right: 2px solid #281B67;
+  text-align: left !important;
+  box-shadow: 6px 0 4px -2px #6560A366;
+}
+
+.table-header .fixed-col {
+  background-color: #281B67;
+}
+
+.fixed-header .table-header {
+  /* 	makes the header row fixed/sticky */
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+/* responsive changes ================================= */
+@media screen and (min-width: 962px) {
+  .table-grid {
+    border-left: 2px solid #281B67;
+    border-right: 2px solid #6560A3;
+    border-top: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .table-grid {
+    font-size: 1.2rem;
+    margin: 2em auto;
   }
 }
 
