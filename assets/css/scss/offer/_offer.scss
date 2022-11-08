@@ -1,182 +1,158 @@
 // https://codepen.io/jecofish/pen/KKzJrwe 
 
-.offer-section {
 
 
-    .offer-table {
-        position: relative;
-        min-height: 400px;
-        background: lightgreen;
-    }
 
-    .offer-grid {
-        display: grid;
-        grid-template-columns: 4fr 9fr;
+// PLANY 
+.cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 
-    }
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
 
-    .table-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .right-side {
-        // overflow: auto;
-
-    }
-
-    .right-side-inner {
-
-        position: relative;
-    }
-
-    .offer-top {
-        background: $baige;
-        position: sticky;
-        top: $headerDesktopHeight;
-
-        @media (max-width: $mobileWidth) {
-            top: $headerMobileHeight;
-
-        }
-
-    }
-
-
-    .cell {
-        min-height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 200px
-    }
-
-    // PLANY 
-    .top-cells {
-        .cell {
-            padding: 2rem 1rem;
-            height: 236px;
-        }
-    }
-
-    .plan {
+    .plan-top {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
+        text-align: center;
 
-        .plan-top {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            text-align: center;
+    }
 
-        }
 
-        .plan-title {
 
-            font-size: 32px;
-            font-family: $secondaryFont;
-            font-weight: $fw400;
-            text-transform: uppercase;
-        }
+    .plan-desc,
+    .plan-size {
+        font-size: 18px;
+        font-weight: $fw300;
+        letter-spacing: 1px;
+    }
 
-        .plan-desc,
-        .plan-size {
-            font-size: 18px;
-            font-weight: $fw300;
-            letter-spacing: 1px;
-        }
-
-        .plan-size {
-            margin-top: 1rem;
-        }
-
+    .plan-size {
+        margin-top: 1rem;
     }
 
 }
-    // TABELA 
-    .wrap {
-        max-width: 960px;
-        margin: 2em auto;
+.plan-title {
+
+    font-size: 32px;
+    font-family: $secondaryFont;
+    font-weight: $fw400;
+    text-transform: uppercase;
+}
+
+
+
+
+/* ==== Table of DIVs with CSS Grid ==== VITAL CSS ==== */
+.table-wrap {
+    .double {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        .plan-title {
+            text-align: right;
+            align-self: flex-end;
+        }
+        p {
+            text-align: left;
+            align-self: flex-start; 
+            font-size: 18px;
+            text-transform: uppercase;
+        }
     }
-    
-    /* ==== Table of DIVs with CSS Grid ==== VITAL CSS ==== */
-    .table-wrap { /* the table wrapper */
-        margin: 2em auto;
-        // max-width: 960px;
-        
-        background-color: #fff;
-      font-size: .9em;
+}
+.table-grid {
+    /* the table */
+    display: grid;
+    grid-template-rows: auto;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow: auto;
+
+}
+
+.table-grid.fixed-header {
+    max-height: 99vh;
+    /* ^ max-height is only req'd for sticky/fixed header row */
+}
+
+.table-row {
+    /* all table rows */
+    display: grid;
+    grid-template-columns: 480px repeat(3, 1fr);
+    .cell {
+        border-right: 1px solid $lightBorder;
+        border-bottom: 1px solid $lightBorder;
+        &:last-of-type {
+            border-right: 0;
+        }
     }
-    .table-grid { /* the table */
+}
+
+.table-row>div {
+    /* the individual cells */
+    align-self: center;
+    text-align: center;
+}
+
+.fixed-col {
+    /* the fixed cells */
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 4;
+    background: $baige;
+}
+
+
+
+.fixed-header .table-header {
+    /* 	makes the header row fixed/sticky */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: $baige;
+}
+
+.details {
+    .cell {
+        height: 80px;
+        padding: 1rem;
+    }
+    .cell-grid {
         display: grid;
-        grid-template-rows: auto;
-        position: relative;
-        z-index: 1;
         width: 100%;
-        overflow: auto;
-
-        border-bottom: 2px solid #281B67;
-    }
-    .table-grid.fixed-header {
-        max-height: 99vh; 
-        /* ^ max-height is only req'd for sticky/fixed header row */
-    }
-    .table-row { /* all table rows */
-        display: grid;
-        grid-template-columns: 240px repeat(3,1fr);
-        background-color: #fff;
-    }
-    .table-row:nth-of-type(2n), 
-    .table-row:nth-of-type(2n) .fixed-col { /* styles the alternating rows */
-        background-color: #E5E4EF;
-    }
-    .table-row > div { /* the individual cells */
-        padding: .5em;
-        align-self: center;
-        text-align: center;
-    }
-    .table-header { /* the header row */
-        font-weight: bold;
-        background-color: #6560A3;
-        color: #fff;
-        padding: 0;
-    }
-    .fixed-col { /* the fixed cells */
-        position: -webkit-sticky;
-        position: sticky;
-        left: 0;
-        z-index: 4;
-        
-        background-color: #fff;
-        padding: 1.2em !important;
-        border-right: 2px solid #281B67;
-        text-align: left !important;
-        box-shadow: 6px 0 4px -2px #6560A366;
-    }
-    .table-header .fixed-col {
-        background-color: #281B67;
-    }
-    .fixed-header .table-header { /* 	makes the header row fixed/sticky */
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 5;
-    }
-    
-    /* responsive changes ================================= */
-    @media screen and (min-width: 962px) {
-      .table-grid {
-        border-left: 2px solid #281B67;
-        border-right: 2px solid #6560A3;
-        border-top: 0;
-      }
+        grid-template-columns: 20px auto 120px;
+        grid-gap: 1rem;
+        align-items: center;
+        span {
+            text-align: right;
+        }
+        > span, p {
+            font-size: 18px;
+            text-transform: uppercase;
+      
+        }
+        p {
+            text-align: left;
+        }
+        .more {
+            font-size: 18px;
+            text-transform: none;
+            span {
+                font-size: 12px;
+            }
+        }
 
     }
-    @media screen and (min-width: 1080px) {
-      .table-grid {
-        font-size: 1.2rem;
-        margin: 2em auto;
-      }
-    }
-    
+}

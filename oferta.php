@@ -29,58 +29,9 @@ include './components/head.php';
             <main>
                 <?php include './components/header.php'; ?>
 
-
-                <div class="top-cells  offer-top">
-                                        <!-- <div class="cell plan">
-                                            <div class="plan-top">
-                                                <h2 class="plan-title">Koncepcyjny</h2>
-                                                <p class="plan-desc">
-                                                    Wybierz jeśli potrzebujesz tylko pomysłu, a z resztą poradzisz sobie
-                                                    sam
-                                                </p>
-                                            </div>
-                                            <p class="plan-size">
-                                                150zł/m2
-                                            </p>
-
-                                        </div>
-                                        <div class="cell plan">
-                                            <div class="plan-top">
-                                                <h2 class="plan-title">Kompleksowy</h2>
-                                                <p class="plan-desc">
-                                                    Wybierz jeśli potrzebujesz pomysłu
-                                                    oraz informacji i wszelkich wytycznych
-                                                    do jego wykonania
-                                                </p>
-                                            </div>
-                                            <p class="plan-size">
-                                                200zł/m2
-                                            </p>
-                                        </div>
-                                        <div class="cell plan">
-                                            <div class="plan-top">
-
-                                                <h2 class="plan-title">Pod klucz</h2>
-                                                <p class="plan-desc">
-                                                    Wybierz jeśli chcesz mieć
-                                                    święty spokój
-                                                </p>
-                                            </div>
-                                            <p class="plan-size">
-                                                wycena indywidualna
-                                            </p>
-                                        </div>
-                                    </div> -->
-
-                <!-- <div class="offer-section "> -->
-                    <!-- <div class="offer-table"> -->
-       <!-- TABELA  -->
-       <?php include './components/table.php'; ?>
-       <!-- TABELA END -->
-
-                    <!-- </div> -->
-
-                <!-- </div> -->
+                <!-- TABELA  -->
+                <?php include './components/table.php'; ?>
+                <!-- TABELA END -->
 
             </main>
 
