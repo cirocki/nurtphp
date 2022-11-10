@@ -22,11 +22,10 @@
                                     <h2 class="project-title">Opinie</h2>
                                 </div>
                                 <div class="project-name-wrapper">
-                                    <date class="project-name">Andrzej</date>
+                                    <p class="project-name">Konrad</p>
                                 </div>
                                 <div class="project-desc-wrapper">
-                                    <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis
-                                        laoreet placerat ac vel quam. Cras tristique malesuada justo.</date>
+                                    <p class="project-desc">Polecam usługi Justyny Marczak, wykonała pełny projekt mieszkania, od&nbsp;A&nbsp;do&nbsp;Z. Wszystko terminowo, a&nbsp;dodatkowo zawsze gotowa do pomocy i&nbsp;pod telefonem w&nbsp;razie konieczności zmiany w&nbsp;projekcie na już. Bardzo polecam! Jeśli będę miał możliwość, to skorzystam kolejny raz.</p>
                                 </div>
                             </div>
                         </div>
@@ -44,11 +43,30 @@
                                     <h2 class="project-title">Opinie</h2>
                                 </div>
                                 <div class="project-name-wrapper">
-                                    <date class="project-name">Marcin</date>
+                                    <p class="project-name">Iza</p>
                                 </div>
                                 <div class="project-desc-wrapper">
-                                    <date class="project-desc">Sed egestas bibendum faucibus. Ut sit amet dui vel turpis
-                                        laoreet placerat ac vel quam. Cras tristique malesuada justo.</date>
+                                    <p class="project-desc">Kontakt z&nbsp;projektantka świetny. Można liczyć w każdym momencie na dobrą rade i&nbsp;pomoc. Przygotowany projekt i&nbsp;lista materiałow bardzo dokładna. Zostaliśmy wysłuchani i&nbsp;to czego chcieliśmy Justyna zawarła w&nbsp;projekcie w&nbsp;100%. Efekt końcowy WOW, praktycznie urzeczywistniający to co było pokazane w wizualizacji.Gorąco polecam! Dzięki!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ITEM END  -->
+                    <!-- ITEM  -->
+                    <li class="splide__slide">
+                        <div class="project-item">
+                            <div class="standard-grid project-grid">
+                                <div class="project-thumbnail-wrapper filter-image">
+                                    <img src="./assets/img/project/index-projekt1.jpg" alt="Projekt - Gdańsk IV">
+                                </div>
+                                <div class="project-title-wrapper">
+                                    <h2 class="project-title">Opinie</h2>
+                                </div>
+                                <div class="project-name-wrapper">
+                                    <p class="project-name">Monika</p>
+                                </div>
+                                <div class="project-desc-wrapper">
+                                    <p class="project-desc">Świetne i&nbsp;świeże pomysły. Wsłuchuje się w&nbsp;potrzeby  domowników i&nbsp;potrafi je przelać na projekt. Lista wyposażenia kompletna. Doskonały kontakt z&nbsp;Justyną. Polecamy i&nbsp;dziękujemy za współpracę</p>
                                 </div>
                             </div>
                         </div>

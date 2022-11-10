@@ -29,7 +29,9 @@
                         <div class="item-answer__grid">
                             <div></div>
                             <div class="answer">
-                                <p>Zanim zacznę projektowanie Twojego wnętrza zapraszam Cię na spotkanie do mojego biura w Gdańsku lub, w przypadku projektów zdalnych, umawiamy się on-line. Podczas takiego spotkania podpisujemy umowę, która zawiera wszystkie szczegóły naszej współpracy oraz rozmawiamy o założeniach projektowych dotyczących funkcjonalności, budżetu czy materiałów. Chcę też poznać Twoje oczekiwania, gust oraz zwyczaje a w tym celu przeprowadzam z Tobą ankietę. Wszystko po to, by wnętrze które zaprojektuję było skrojone dokładnie na Twoją miarę.</p>
+                                <p>Tak, jest taka możliwość. Takie projekty wyceniane są indywidualnie. Wyślij zapytanie na <a href="mailto:hello@nurt.studio">hello@nurt.studio</a> lub zadzwoń <a href="tel:+48600366061">600366061</a></p>
+                                
+                                
                             </div>
 
                         </div>
@@ -61,10 +63,7 @@
                         <div class="item-answer__grid">
                             <div></div>
                             <div class="answer">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nobis laudantium
-                                    repudiandae,
-                                    fugit animi odio ipsum a consectetur natus id voluptatibus excepturi unde molestias
-                                    voluptate. Provident, autem similique. Delectus, ad.</p>
+                                <p>Zdecydowana większość moich projektów to wnętrza mieszkalne ale wykonuję także projekty komercyjne. Takie projekty wyceniane są indywidualnie. Wyślij zapytanie na <a href="mailto:hello@nurt.studio">hello@nurt.studio</a> lub zadzwoń <a href="tel:+48600366061">600366061</a></p>
                             </div>
 
                         </div>
@@ -96,10 +95,7 @@
                         <div class="item-answer__grid">
                             <div></div>
                             <div class="answer">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nobis laudantium
-                                    repudiandae,
-                                    fugit animi odio ipsum a consectetur natus id voluptatibus excepturi unde molestias
-                                    voluptate. Provident, autem similique. Delectus, ad.</p>
+                                <p>Płatności są podzielone na transze. Pierwsza transza zaraz po podpisaniu umowy, kolejne po zakończeniu poszczególnych etapów projektu.</p>
                             </div>
 
                         </div>
@@ -131,10 +127,7 @@
                         <div class="item-answer__grid">
                             <div></div>
                             <div class="answer">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nobis laudantium
-                                    repudiandae,
-                                    fugit animi odio ipsum a consectetur natus id voluptatibus excepturi unde molestias
-                                    voluptate. Provident, autem similique. Delectus, ad.</p>
+                                <p>Krótko mówiąc – im szybciej tym lepiej. Sam proces projektowy trwa około 3&nbsp;miesiące, kompletowanie wyposażenia to kolejne tygodnie, więc szybsze podjęcie tematu minimalizuje ilość stresu i&nbsp;pomyłek.</p>
                             </div>
 
                         </div>
